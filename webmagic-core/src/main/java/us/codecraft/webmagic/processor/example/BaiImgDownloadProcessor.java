@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
+ * 网站图片爬取工具
  * @Author shuxf
  * @Date 2017/9/18 15:55
  */
