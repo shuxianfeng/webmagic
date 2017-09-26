@@ -9,14 +9,9 @@ import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
 
 import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 import java.util.UUID;
 
 /**
@@ -45,7 +40,7 @@ public class BaiImgDownloadProcessor implements PageProcessor{
         //single download
         Spider spider = Spider.create(new BaiImgDownloadProcessor()).thread(2);
         String urlTemplate = "http://jiaoyou.58.com/photowall/?PGTID=0d300003-0000-072c-814c-5eaa45c6b8c9&ClickID=1";
-        ResultItems resultItems = spider.<ResultItems>get(String.format(urlTemplate, ""));
+        ResultItems resultItems = spider.get(String.format(urlTemplate, ""));
         System.out.println(resultItems.get("description"));
 
         //根据这个图片url集合，遍历下载保存图片
