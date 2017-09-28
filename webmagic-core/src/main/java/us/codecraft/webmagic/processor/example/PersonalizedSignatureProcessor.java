@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * 获取页面文本
- *
+ * 爬取页面文本个性签名字符串
  * @Author zhurui
  * @Date 2017/9/26 10:28
  */
